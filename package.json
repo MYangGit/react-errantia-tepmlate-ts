@@ -1,0 +1,49 @@
+{
+  "name": "you-app-name",
+  "displayName": "you-app-name",
+  "description": "这是一个新的app",
+  "icon": "app-icon.png",
+  "activationEvents": [
+    "onCommand:you-name-start-app"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "you-name-start-app",
+        "title": "startYouApp"
+      }
+    ]
+  },
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "repository": ".",
+  "publisher": "TongYuan",
+  "engines": {
+    "vscode": "^1.75.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "updata-package": "node ./package-edit.cjs"
+  },
+  "dependencies": {
+    "defer-promise": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/defer-promise": "^1.0.4",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6"
+  }
+}
